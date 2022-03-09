@@ -1,0 +1,10 @@
+.Loading h1 {
+  border: 1px solid darkcyan;
+  bottom: 1%;
+  box-shadow: 2px 5px 8px;
+  color: salmon;
+  font-size: 2.2rem;
+  left: 14rem;
+  margin: 2rem;
+  position: fixed;
+}
