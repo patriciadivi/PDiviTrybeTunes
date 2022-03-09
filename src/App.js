@@ -7,12 +7,13 @@ import Favorites from './pages/Favorites';
 import Profile from './pages/Profile';
 import ProfileEdit from './pages/ProfileEdit';
 import NotFound from './pages/NotFound';
+import './styles/App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <section>
-        <div>
+      <section className="App">
+        <div className="divPApp">
           <p>TrybeTunes</p>
         </div>
         <BrowserRouter>

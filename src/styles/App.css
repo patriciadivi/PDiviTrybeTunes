@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-bottom: 0.5rem;
+}
+
+.App {
+  background-color: blue;
+  height: 100vh;
+}
+
+.App .divPApp {
+  background-color: aliceblue;
+  border: 1px solid salmon;
+  border-radius: 0.3rem 0.7rem 0.1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgb(32, 32, 32);
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  width: 90%;
+}
+
+.App .divPApp p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  text-align: center;
+}

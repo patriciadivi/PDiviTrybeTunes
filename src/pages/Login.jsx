@@ -2,10 +2,11 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { createUser } from '../services/userAPI';
 import Loading from './Loading';
+import '../styles/Login.css';
 
 class Login extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       user: '',
       isSaveButtonDisabled: true,
@@ -38,15 +39,19 @@ class Login extends React.Component {
     this.setState({
       logado: true,
     });
+    this.setState({
+      loading: false,
+    });
   }
 
   render() {
     const { user, isSaveButtonDisabled, loading, logado } = this.state;
     return (
-      <section>
+      <section className="Login">
         {
-          !loading
-            ? (
+          logado
+            ? (<Redirect to="/search" />)
+            : (
               <div data-testid="page-login">
                 <h2>Login</h2>
                 <input
@@ -65,11 +70,9 @@ class Login extends React.Component {
                 >
                   Entrar
                 </button>
-              </div>
-            )
-            : (
-              <div>
-                { logado ? (<Redirect to="/search" />) : (<Loading />) }
+                {
+                  loading && <Loading />
+                }
               </div>
             )
         }
