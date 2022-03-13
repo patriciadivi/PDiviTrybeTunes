@@ -46,6 +46,7 @@ class Login extends React.Component {
 
   render() {
     const { user, isSaveButtonDisabled, loading, logado } = this.state;
+    console.log(this.state);
     return (
       <section className="Login">
         {

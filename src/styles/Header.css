@@ -1,0 +1,15 @@
+.Header nav {
+  border: 1px solid salmon;
+  color: antiquewhite;
+  margin: 0 auto;
+  padding: 0.8rem;
+  text-align: center;
+  width: 90%;
+
+}
+
+.Header nav a {
+  color: antiquewhite;
+  padding: 0.8rem;
+
+}
