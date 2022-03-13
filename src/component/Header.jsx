@@ -20,7 +20,7 @@ class Header extends React.Component {
 
   render() {
     const { name } = this.state;
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <section className="Header">
         <header data-testid="header-component">
